@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "title": "Delete Session",
+    "description": "Delete sessions permanently instead of archiving, replacing sidebar archive actions with permanent deletion and confirmation."
+  },
+  "deleteAction": "Delete Permanently",
+  "deleteTooltip": "Delete conversation permanently",
+  "confirmMessage": "Are you sure you want to permanently delete this conversation?\nIts local log files and records will be completely removed and cannot be recovered."
+}

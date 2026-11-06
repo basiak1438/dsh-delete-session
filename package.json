@@ -1,0 +1,59 @@
+{
+  "name": "dsh-delete-session",
+  "version": "1.0.0",
+  "description": "Delete sessions permanently instead of archiving in DeepSeek Harness · 彻底删除对话而不是归档",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basiak1438/dsh-delete-session.git"
+  },
+  "homepage": "https://github.com/basiak1438/dsh-delete-session#readme",
+  "bugs": {
+    "url": "https://github.com/basiak1438/dsh-delete-session/issues"
+  },
+  "type": "module",
+  "icon": "./icon.svg",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "delete-session",
+    "web-ui"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.1",
+    "node": ">=18"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
